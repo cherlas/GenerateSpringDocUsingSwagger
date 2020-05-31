@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.istarxc.tools.mapper.InterfaceGenerateMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.istarxc.tools.entity.InterfaceGenerate">
+        <id column="ID" property="id" />
+        <result column="str_column" property="strColumn" />
+        <result column="int_column" property="intColumn" />
+        <result column="date_column" property="dateColumn" />
+        <result column="bool_column" property="boolColumn" />
+        <result column="enum_column" property="enumColumn" />
+        <result column="float_column" property="floatColumn" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, str_column, int_column, date_column, bool_column, enum_column, float_column
+    </sql>
+
+</mapper>
