@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.web.client.RestTemplate;
+import org.thymeleaf.Thymeleaf;
 
 import java.net.URI;
 import java.util.*;
@@ -35,10 +36,10 @@ class InterfaceGeneratorToolsApplicationTests {
         JSONObject pathsObj = swaggerDocJsonObj.getJSONObject("paths");
         Map<String, Map<String, Property>> definitions = generateDefinitions(definitionsObj);
         List<MethodInfo> methodInfos = generatePaths(pathsObj, definitions, basePath);
-        generdateDocs(methodInfos);
+        generateDocs(methodInfos);
     }
 
-    private void generdateDocs(List<MethodInfo> methodInfos) {
+    private void generateDocs(List<MethodInfo> methodInfos) {
 
     }
 

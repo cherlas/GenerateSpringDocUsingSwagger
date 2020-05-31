@@ -8,8 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("cn.istarxc.tools.mapper")
 public class InterfaceGeneratorToolsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(InterfaceGeneratorToolsApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(InterfaceGeneratorToolsApplication.class, args);
+    }
 }
